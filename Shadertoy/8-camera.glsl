@@ -67,8 +67,8 @@ vec3 render(vec2 uv){
   vec3 color = vec3(0.0);
 
   // 定义一个相机位置  （xyz）
-  // vec3 ro = vec3(2.*cos(iTime), 0., 2.*sin(iTime));
-  vec3 ro = vec3(0., 0., 2.);
+  vec3 ro = vec3(2.*cos(iTime), 0., 2.*sin(iTime));
+  // vec3 ro = vec3(0., 0., 2.);
   if(iMouse.z>0.1){
     float theta=iMouse.x/iResolution.x*2.*PI;
     ro=vec3(2.*cos(theta),0.,2.*sin(theta));
